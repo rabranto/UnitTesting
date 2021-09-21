@@ -9,7 +9,16 @@ namespace Classes.Test
         [TestMethod]
         public void FileNameDoesExist()
         {
-            Assert.Inconclusive();
+            //Arrange
+            FileManager fileManager = new FileManager();
+            bool fromCall;
+
+            //Act
+            fromCall = fileManager.IsFileExist(@"C:\Windows\notepad.exe");
+
+            //Assert
+            Assert.IsTrue(fromCall);
+
         }
 
         [TestMethod]

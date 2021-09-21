@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Classes
 {
-    class FileManager
+    public class FileManager
     {
         public bool IsFileExist(string file)
         {
